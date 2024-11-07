@@ -25,13 +25,19 @@ public class Main {
             // Create and add documents
             List<Document> test_documenti = CreaDocumenti.parseHtmlFilesInDirectory("C:/Users/hp/papers/urls_htmls_tables/test_one_doc");
             Document doc1 = test_documenti.get(0);
-            // Document doc2 = test_documenti.get(1);
+            Document doc2 = test_documenti.get(1);
+            Document doc3 = test_documenti.get(2);
+            Document doc4 = test_documenti.get(3);
+            Document doc5 = test_documenti.get(4);
 
             config.setCodec(new SimpleTextCodec());
             IndexWriter writer = new IndexWriter(directory, config);
 
             writer.addDocument(doc1); // Add documents to be indexed
-            //writer.addDocument(doc2);
+            writer.addDocument(doc2);
+            writer.addDocument(doc3);
+            writer.addDocument(doc4);
+            writer.addDocument(doc5);
 
             writer.commit(); // Persist changes to the disk
             writer.close();

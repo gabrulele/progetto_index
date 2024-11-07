@@ -60,22 +60,43 @@ public class CreaDocumenti {
     private static List<String> estraiAutori(Element autoriElement) {
         List<String> autoriNomiList = new ArrayList<>();
 
+        String cleanRegex = "[^A-Za-zÀ-ÿ\\-' ]"; // Regex per la pulizia dei nomi
+
         if (autoriElement == null) {
             return autoriNomiList;  // Restituisce una lista vuota se non ci sono autori
         }
 
         // Seleziona tutti gli elementi con classe ltx_personname per ottenere i nomi
-        Elements autoriNomi = autoriElement.select("span.ltx_personname");
+        Elements autoriBlocchi = autoriElement.select("span.ltx_personname");
 
-        for (Element autore : autoriNomi) {
+        // Itera su ogni elemento "ltx_personname" trovato
+        for (Element autoriBlocco : autoriBlocchi) {
 
-            // Rimuovi i tag <br> e sostituiscili con una virgola e spazio per una formattazione leggibile
-            String autoreNome = autore.html().replaceAll("<br.*?>", ", ").replaceAll("&amp;", "&").trim();
-            autoriNomiList.add(autoreNome);
+            String htmlBlocco = autoriBlocco.html()
+                    .replaceAll("<br[^>]*>", " ")      // Sostituisce i tag <br> con uno spazio
+                    .replaceAll("<sup[^>]*>.*?</sup>", " ")  // Rimuove i tag <sup> e il loro contenuto
+                    .replaceAll("<span[^>]*>.*?</span>", " ") // Rimuove i tag <span> interni
+
+                    // Rimuove eventuali tag html residui
+                    .replaceAll("<[^>]+>", " ");
+
+            System.out.println(htmlBlocco);
+
+            // Usa la regex generalizzata per dividere i nomi degli autori
+            String[] autoriNomi = htmlBlocco.split("\\s*(,|;|\\s{2,}| |<br.*?>|\\n|\\\"|\\band\\b)\\s*");
+
+            // Modifica ogni nome per rimuovere caratteri non validi e aggiungilo alla lista
+            for (String nome : autoriNomi) {
+                // Rimuove numeri e caratteri non desiderati, mantenendo solo lettere, trattini e apostrofi
+                String nomePulito = nome.replaceAll(cleanRegex, "").trim();
+
+                // Aggiungi il nome alla lista solo se non è vuoto e se sembra un nome valido
+                if (!nomePulito.isEmpty()) {
+                    autoriNomiList.add(nomePulito);
+                }
+            }
         }
-
         return autoriNomiList;
     }
-
 }
 
