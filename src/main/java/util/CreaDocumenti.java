@@ -60,7 +60,7 @@ public class CreaDocumenti {
     private static List<String> estraiAutori(Element autoriElement) {
         List<String> autoriNomiList = new ArrayList<>();
 
-        String cleanRegex = "[^A-Za-zÀ-ÿ\\-' ]"; // Regex per la pulizia dei nomi
+        String cleanRegex = "[^\\p{L}\\p{M}\\-' ]"; // Regex per la pulizia dei nomi
 
         if (autoriElement == null) {
             return autoriNomiList;  // Restituisce una lista vuota se non ci sono autori
@@ -74,13 +74,11 @@ public class CreaDocumenti {
 
             String htmlBlocco = autoriBlocco.html()
                     .replaceAll("<br[^>]*>", " ")      // Sostituisce i tag <br> con uno spazio
-                    .replaceAll("<sup[^>]*>.*?</sup>", " ")  // Rimuove i tag <sup> e il loro contenuto
-                    .replaceAll("<span[^>]*>.*?</span>", " ") // Rimuove i tag <span> interni
+                    //.replaceAll("<sup[^>]*>.*?</sup>", " ")  // Rimuove i tag <sup> e il loro contenuto
+                    //.replaceAll("<span[^>]*>.*?</span>", " ") // Rimuove i tag <span> interni
 
                     // Rimuove eventuali tag html residui
                     .replaceAll("<[^>]+>", " ");
-
-            System.out.println(htmlBlocco);
 
             // Usa la regex generalizzata per dividere i nomi degli autori
             String[] autoriNomi = htmlBlocco.split("\\s*(,|;|\\s{2,}| |<br.*?>|\\n|\\\"|\\band\\b)\\s*");

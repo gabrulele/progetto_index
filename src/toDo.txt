@@ -1,4 +1,5 @@
-1) Ciclo for con costruzione di indici in index
-2) Problema autori
-3) Scegliere quale analyzer per ogni field
-4) Estendere a tutti i documenti
+1) vocalization su titolo
+2) n-grammi su contenuto
+
+(Negli autori Su risulta un nome interessante - per la relazione)
+
