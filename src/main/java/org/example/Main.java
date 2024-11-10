@@ -12,10 +12,10 @@ public class Main {
     public static void main(String[] args) {
         creator.creaIndice();
 
+        // Loop per ricerche ripetute
         while(true){
             searcher.cercaIndice();
 
-            // Loop per ricerche ripetute
             Scanner scanner = new Scanner(System.in);
             System.out.print("Vuoi continuare? Y/n");
             String exit = scanner.nextLine();

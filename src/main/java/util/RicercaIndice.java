@@ -82,13 +82,19 @@ public class RicercaIndice {
 
                 System.out.print("Autori: ");
                 String[] autori = doc.getValues("autori");
-                System.out.print("[" + autori[0]);
-                String[] autoriNomi = new String[autori.length - 1];
-                System.arraycopy(autori, 1, autoriNomi, 0, autoriNomi.length);
-                for(String a : autoriNomi){
-                    System.out.print(", " + a);
+
+                if(autori != null && autori.length > 0) {
+                    System.out.print("[" + autori[0]);
+                    String[] autoriNomi = new String[autori.length - 1];
+                    System.arraycopy(autori, 1, autoriNomi, 0, autoriNomi.length);
+                    for (String a : autoriNomi) {
+                        System.out.print(", " + a);
+                    }
+                    System.out.println("]");
                 }
-                System.out.println("]");
+                else{
+                    System.out.println("Autori non presenti");
+                }
 
                 // System.out.println("Contenuto: " + doc.get("contenuto"));
                 System.out.println("\n------------------------------------------------\n");

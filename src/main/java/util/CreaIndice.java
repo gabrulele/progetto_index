@@ -47,9 +47,9 @@ public class CreaIndice {
             config.setCodec(new SimpleTextCodec());
             IndexWriter writer = new IndexWriter(directory, config);
 
-            // "C:/Users/hp/papers/urls_htmls_tables/urls_htmls_tables/all_htmls" per tutti i documenti
+            // "C:/Users/hp/papers/urls_htmls_tables/test_one_doc" path per i test su 10 documenti
             // Recuperiamo i documenti
-            List<Document> test_documenti = CreaDocumenti.parseHtmlFilesInDirectory("C:/Users/hp/papers/urls_htmls_tables/test_one_doc");
+            List<Document> test_documenti = CreaDocumenti.parseHtmlFilesInDirectory("C:/Users/hp/papers/urls_htmls_tables/urls_htmls_tables/all_htmls");
 
             for(Document documento : test_documenti){
                 writer.addDocument(documento); // Indicizzazione dei documenti
