@@ -43,6 +43,7 @@ public class CreaDocumenti {
             // Crea un oggetto Documento di Lucene con l'aggiunta dei relativi campi
             Document documento = new Document();
             documento.add(new TextField("titolo", titolo, Field.Store.YES));
+
             // Aggiunta di ciascun autore come un valore separato nel campo "authors"
             for (String autore : autori) {
                 documento.add(new TextField("autori", autore, Field.Store.YES));
@@ -74,17 +75,14 @@ public class CreaDocumenti {
 
             String htmlBlocco = autoriBlocco.html()
                     .replaceAll("<br[^>]*>", " ")      // Sostituisce i tag <br> con uno spazio
-                    //.replaceAll("<sup[^>]*>.*?</sup>", " ")  // Rimuove i tag <sup> e il loro contenuto
-                    //.replaceAll("<span[^>]*>.*?</span>", " ") // Rimuove i tag <span> interni
-
-                    // Rimuove eventuali tag html residui
-                    .replaceAll("<[^>]+>", " ");
+                    .replaceAll("<[^>]+>", " ");       // Rimuove eventuali tag html residui
 
             // Usa la regex generalizzata per dividere i nomi degli autori
             String[] autoriNomi = htmlBlocco.split("\\s*(,|;|\\s{2,}| |<br.*?>|\\n|\\\"|\\band\\b)\\s*");
 
             // Modifica ogni nome per rimuovere caratteri non validi e aggiungilo alla lista
             for (String nome : autoriNomi) {
+
                 // Rimuove numeri e caratteri non desiderati, mantenendo solo lettere, trattini e apostrofi
                 String nomePulito = nome.replaceAll(cleanRegex, "").trim();
 

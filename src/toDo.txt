@@ -1,5 +1,0 @@
-1) query mirata composta da tiolo e autore
-2) query n-grammi/shingle su titolo
-
-(Negli autori Su risulta un nome interessante - per la relazione)
-

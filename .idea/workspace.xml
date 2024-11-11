@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f267e2a-2b49-42d6-ac13-167f6360c2d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/Statistiche.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/CreaDocumenti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/CreaDocumenti.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/CreaIndice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/CreaIndice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/RicercaIndice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/RicercaIndice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/Stopwords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Stopwords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toDo.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -123,6 +129,9 @@
       <workItem from="1731003552045" duration="67000" />
       <workItem from="1731052717285" duration="33161000" />
       <workItem from="1731235217994" duration="5061000" />
+      <workItem from="1731240773783" duration="351000" />
+      <workItem from="1731310805324" duration="16778000" />
+      <workItem from="1731330720850" duration="359000" />
     </task>
     <servers />
   </component>
