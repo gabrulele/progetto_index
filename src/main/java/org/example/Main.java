@@ -11,9 +11,9 @@ public class Main {
     private static RicercaIndice searcher = new RicercaIndice();
 
     public static void main(String[] args) {
-        creator.creaIndice();
+        // creator.creaIndice();
 
-        new Statistiche().statisticheIndice();
+        // new Statistiche().statisticheIndice();
 
         // Loop per ricerche ripetute
         while(true){

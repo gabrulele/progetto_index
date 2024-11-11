@@ -131,7 +131,7 @@ public class RicercaIndice {
                         System.out.println("Autori non presenti");
                     }
 
-                    System.out.println("Contenuto: " + doc.get("contenuto"));
+                    // System.out.println("Contenuto: " + doc.get("contenuto"));
                     System.out.println("Punteggio: " + hit.score);
                     System.out.println("\n------------------------------------------------\n");
                 }
@@ -170,7 +170,7 @@ public class RicercaIndice {
                         System.out.println("Autori non presenti");
                     }
 
-                    System.out.println("Contenuto: " + doc.get("contenuto"));
+                    // System.out.println("Contenuto: " + doc.get("contenuto"));
                     System.out.println("Punteggio: " + hit.score);
                     System.out.println("\n------------------------------------------------\n");
                 }
