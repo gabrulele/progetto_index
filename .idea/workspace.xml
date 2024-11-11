@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f267e2a-2b49-42d6-ac13-167f6360c2d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/index/_1.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_1.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_2.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_2.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_d.fld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_d.inf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_d.len" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_d.pst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_d.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_g.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_g.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_o.fld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_o.inf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_o.len" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_o.pst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_o.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_p.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_p.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_q.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_q.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_r.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_r.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_s.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_s.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_t.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_t.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_u.scf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/_u.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/segments_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index/write.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/RicercaIndice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/RicercaIndice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +124,7 @@
       <workItem from="1731240773783" duration="351000" />
       <workItem from="1731310805324" duration="16778000" />
       <workItem from="1731330720850" duration="955000" />
-      <workItem from="1731336429813" duration="1776000" />
+      <workItem from="1731336429813" duration="4210000" />
     </task>
     <servers />
   </component>
